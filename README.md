@@ -36,6 +36,9 @@ Fall into the Death Zone to trigger the lose screen.
 - **D / Right Arrow:** Move right.
 - **Space:** Jump.
 
+## Photos
+<img width="750" height="587" alt="Screenshot (361)" src="https://github.com/user-attachments/assets/8824febd-fada-49a9-b0b1-ff1507cbc373" />
+
 ## Built With
 
 - Godot Engine
