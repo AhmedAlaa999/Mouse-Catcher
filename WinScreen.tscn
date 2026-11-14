@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://byr7gqqnnfy4b"]
+
+[ext_resource type="Script" uid="uid://bogt50redps1m" path="res://win_screen.gd" id="1_6l1fx"]
+[ext_resource type="FontFile" uid="uid://dm8p3dktgcg7u" path="res://Minecraft.ttf" id="2_ddy7k"]
+[ext_resource type="Texture2D" uid="uid://bxidd1qhrah8j" path="res://head.png" id="3_bc332"]
+[ext_resource type="AudioStream" uid="uid://byukg4n27tqcu" path="res://Record (online-voice-recorder.com) (3).mp3" id="4_ddy7k"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=430260851]
+script = ExtResource("1_6l1fx")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=939823130]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4509804, 0.6627451, 0, 0.28627452)
+
+[node name="CenterContainer" type="CenterContainer" parent="ColorRect" unique_id=1265797706]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.5
+offset_top = -62.5
+offset_right = 92.5
+offset_bottom = 62.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/CenterContainer" unique_id=446678601]
+layout_mode = 2
+alignment = 1
+
+[node name="YouWin" type="Label" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=382330919]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_ddy7k")
+theme_override_font_sizes/font_size = 63
+text = "YOU WN"
+
+[node name="MainMenu" type="Button" parent="ColorRect/CenterContainer/VBoxContainer" unique_id=1673417619]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ddy7k")
+theme_override_font_sizes/font_size = 35
+text = "MAIN MENU"
+
+[node name="Head" type="Sprite2D" parent="." unique_id=17883516]
+position = Vector2(1134, 282)
+scale = Vector2(4.8289623, 6.848958)
+texture = ExtResource("3_bc332")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1459743747]
+stream = ExtResource("4_ddy7k")
+volume_db = 24.0
+pitch_scale = 1.12

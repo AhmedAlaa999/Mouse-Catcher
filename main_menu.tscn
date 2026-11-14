@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://bqwnol6e3kl55"]
+
+[ext_resource type="Script" uid="uid://qqp68nwflb1j" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://edglutkrqe3o" path="res://Cheese Tileset/Sun.png" id="2_fu7sn"]
+[ext_resource type="FontFile" uid="uid://dm8p3dktgcg7u" path="res://Minecraft.ttf" id="3_jix8l"]
+[ext_resource type="AudioStream" uid="uid://dsoieykkomajg" path="res://sub_clair-game-music-628077.mp3" id="4_glbon"]
+[ext_resource type="Texture2D" uid="uid://cbp8orhdef1md" path="res://images__1_-removebg-preview.png" id="4_jix8l"]
+
+[node name="MainMenu" type="Control" unique_id=533470412]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_06t4h")
+
+[node name="Background" type="TextureRect" parent="." unique_id=579919777]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -376.5
+offset_top = -324.5
+offset_right = 376.5
+offset_bottom = 324.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fu7sn")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=2037557859]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -138.0
+offset_top = -110.75
+offset_right = 138.0
+offset_bottom = 110.75
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1582515464]
+layout_mode = 2
+
+[node name="GameTitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=233170852]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_jix8l")
+theme_override_font_sizes/font_size = 29
+text = "Mouse-Catcher"
+
+[node name="Subtitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1967352494]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_jix8l")
+theme_override_font_sizes/font_size = 17
+text = "Collect Cheese"
+
+[node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=910239106]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_jix8l")
+theme_override_font_sizes/font_size = 20
+text = "PLAY"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=519332707]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_jix8l")
+theme_override_font_sizes/font_size = 20
+text = "QUIT"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=347838630]
+stream = ExtResource("4_glbon")
+volume_db = -13.607
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=602398504]
+offset = Vector2(12.335, 4.36)
+zoom = Vector2(1.09, 1.09)
+
+[node name="Label" type="Label" parent="." unique_id=2061996936]
+layout_mode = 0
+offset_left = -325.0
+offset_top = 275.0
+offset_right = -104.0
+offset_bottom = 298.0
+theme_override_fonts/font = ExtResource("3_jix8l")
+theme_override_font_sizes/font_size = 22
+text = "By Ahmed , Abdallah ,Magdy"
+
+[node name="Images1RemovebgPreview" type="Sprite2D" parent="." unique_id=1558925580]
+position = Vector2(262, 245.00002)
+scale = Vector2(0.2956989, 0.273743)
+texture = ExtResource("4_jix8l")

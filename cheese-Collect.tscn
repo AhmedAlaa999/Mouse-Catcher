@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cj5j2wx7umb6v"]
+
+[ext_resource type="Script" uid="uid://b0nk6fse6kaec" path="res://cheese_collect.gd" id="1_boy7f"]
+[ext_resource type="Texture2D" uid="uid://dlclchqnil4x4" path="res://CheeseFreeze.png" id="1_yvcnq"]
+[ext_resource type="AudioStream" uid="uid://bfc6viqtxcbei" path="res://Cheese Tileset/betoelguapillo_cartoon_eating_sound_effect_427528_mp3cut_net.mp3" id="3_udl5w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boy7f"]
+size = Vector2(21.5, 11.5)
+
+[node name="Cheese" type="Area2D" unique_id=408142418]
+script = ExtResource("1_boy7f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1343574208]
+position = Vector2(5.250001, -1.2499998)
+scale = Vector2(1.9545456, 1.2777778)
+texture = ExtResource("1_yvcnq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=509854031]
+position = Vector2(5.25, -1.25)
+shape = SubResource("RectangleShape2D_boy7f")
+
+[node name="CollectSound" type="AudioStreamPlayer2D" parent="." unique_id=849504235]
+stream = ExtResource("3_udl5w")

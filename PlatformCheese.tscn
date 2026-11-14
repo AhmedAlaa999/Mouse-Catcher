@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ds2s2euiinbkj"]
+
+[ext_resource type="Texture2D" uid="uid://8sopicbrba4c" path="res://Platformcheese.png" id="1_rh6sr"]
+[ext_resource type="Script" uid="uid://cctxju5i72ke4" path="res://platform_cheese.gd" id="1_sj6ul"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dv7cx"]
+size = Vector2(65, 30)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1282293252]
+script = ExtResource("1_sj6ul")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1758923416]
+texture = ExtResource("1_rh6sr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1751350307]
+position = Vector2(-0.5, 16)
+shape = SubResource("RectangleShape2D_dv7cx")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfc6viqtxcbei"
+path="res://.godot/imported/betoelguapillo_cartoon_eating_sound_effect_427528_mp3cut_net.mp3-9308d7df0e6f3941431f3fcc1cf8a965.mp3str"
+
+[deps]
+
+source_file="res://Cheese Tileset/betoelguapillo_cartoon_eating_sound_effect_427528_mp3cut_net.mp3"
+dest_files=["res://.godot/imported/betoelguapillo_cartoon_eating_sound_effect_427528_mp3cut_net.mp3-9308d7df0e6f3941431f3fcc1cf8a965.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
